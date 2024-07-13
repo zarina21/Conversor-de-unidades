@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nova - Convetidor de unidades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div>
+                <a href="index.html" class="botonEnlace">Inicio</a>
+            </div>
+            <div>
+                <a href="Biblioteca.html" class="botonEnlace">Biblioteca</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="titulo">
+            <div>
+                <h1>Conversor de unidades</h1>
+            </div>
+            <div>
+                <p>Convierte tus medidas aqui</p>
+            </div>
+        </div>
+        <div class="calculadoras">
+            <div class="calculadora">
+                <div>
+                    <h1>Longitud</h1>
+                </div>
+                <div>
+                    <input type="number" id="inputLongitud" placeholder="Insertar valor">
+                </div>
+                <div>
+                    <select id="Longitud">
+                        <option value="MetrosAKm">Metros a Km</option>
+                        <option value="MetrosAMillas">Metros a Millas</option>
+                        <option value="KmAMetros">Km a Metros</option>
+                        <option value="KmAMillas">Km a Millas</option>
+                        <option value="MillasAKm">Millas a Km</option>
+                        <option value="MillasAMetros">Millas a Metros</option>
+                    </select>
+                </div>
+                <div>
+                    <p>a:</p>
+                </div>
+                <div>
+                    <button onclick="convertorLongitud()">Convertir</button>
+                </div>
+                <div>
+                    <p id="resultadoLongitud">resultado:</p>
+                </div>
+            </div>
+            <div class="calculadora">
+                <div>
+                    <h1>Volumen</h1>
+                </div>
+                <div>
+                    <input type="number" id="inputVolumen" placeholder="Insertar valor">
+                </div>
+                <div>
+                    <select id="Volumen">
+                        <option value="LitrosAKl">Litros a Kl</option>
+                        <option value="LitrosAGalon">Litros a Galon</option>
+                        <option value="klALitros">Kl a Litros</option>
+                        <option value="klAGalon">Kl a Galon</option>
+                        <option value="GalonAKl">Galon a Kl</option>
+                        <option value="GalonALitros">Galon a Litros</option>
+                    </select>
+                </div>
+                <div>
+                    <p>a:</p>
+                </div>
+                <div>
+                    <button onclick="convertorVolumen()">Convertir</button>
+                </div>
+                <div>
+                    <p id="resultadoVolumen">resultado:</p>
+                </div>
+            </div>
+            <div class="calculadora">
+                <div>
+                    <h1>Masa</h1>
+                </div>
+                <div>
+                    <input type="number" id="inputMasa" placeholder="Insertar valor">
+                </div>
+                <div>
+                    <select id="Masa">
+                        <option value="GramosAKg">Gramos a Kg</option>
+                        <option value="GramosAOz">Gramos a Onzas</option>
+                        <option value="kgAGramos">Kg a Gramos</option>
+                        <option value="KgAOz">Kg a Onzas</option>
+                        <option value="OzAKg">Onzas a Kg</option>
+                        <option value="OzAGramos">Onzas a Gramos</option>
+                    </select>
+                </div>
+                <div>
+                    <p>a:</p>
+                </div>
+                <div>
+                    <button onclick="convertorMasa()">Convertir</button>
+                </div>
+                <div>
+                    <p id="resultadoMasa">resultado:</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="conversor.js"></script>
+</body>
+</html>
