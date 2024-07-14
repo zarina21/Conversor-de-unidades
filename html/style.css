@@ -1,0 +1,79 @@
+/*variable*/
+:root {
+    --color1: rgb(77, 167, 77);
+    --color2: white;
+    --colortext: var(--color1);
+    --colorBorder: gray;
+    --color1Dark: rgb(60, 131, 60);
+}
+/*etiquetas*/
+body{
+    margin:0,5rem;
+}
+h1{
+    margin: 5px 5px 5px 5px;
+    color: var(--colortext);
+}
+p{
+    color: var(--colortext);
+    margin: 5px 5px 5px 5px;
+    font-size:1.2em;
+}
+input {
+    margin: 5px 5px 5px 5px;
+}
+select {
+    margin: 5px 5px 5px 5px;
+}
+button {
+    margin: 5px 5px 5px 5px;
+}
+main {
+    margin: 1em 0 1em 0;
+}
+header {
+    background-color: var(--color1);
+}
+footer {
+    background-color: var(--color1);
+}
+/*class*/
+.menu {
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: var(--color1);
+}
+
+.titulo {
+    margin: 0px 7.5%;
+}
+
+.calculadoras {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 5px 10% 0 10%;
+    background-color: var(--color1);
+    border: solid var(--colorBorder);
+    border-radius: 20px;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.calculadora {
+    background-color: var(--color2);
+    border:dotted var(--colorBorder);
+    margin: 20px;
+    padding: 3px;
+    border-radius: 15px;
+    width: 25%;
+    height: 224px;
+    display: inline-table;
+}
+
+.botonEnlace {
+    padding: 15px 20px;
+    border-width: 0px 2px 0px 2px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
