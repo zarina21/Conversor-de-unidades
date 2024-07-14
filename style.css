@@ -28,9 +28,18 @@ select {
 button {
     margin: 5px 5px 5px 5px;
 }
+main {
+    margin: 1em 0 1em 0;
+}
+header {
+    background-color: var(--color1);
+}
+footer {
+    background-color: var(--color1);
+}
 /*class*/
 .menu {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     background-color: var(--color1);
 }
@@ -40,13 +49,14 @@ button {
 }
 
 .calculadoras {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
-    margin: 5px 15% 0 15%;
+    margin: 5px 10% 0 10%;
     background-color: var(--color1);
     border: solid var(--colorBorder);
     border-radius: 20px;
     justify-content: space-around;
+    width: 70%;
 }
 
 .calculadora {
@@ -57,6 +67,7 @@ button {
     border-radius: 15px;
     width: 25%;
     height: 224px;
+    display: inline-table;
 }
 
 .botonEnlace {
