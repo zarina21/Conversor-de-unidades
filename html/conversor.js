@@ -24,9 +24,10 @@ function convertorLongitud() {
     } else if (MillasAKm === true){
         result = inputValue * 1.609;
         convertido = "Km"
-    } else if(MillasAMetros === true)
+    } else if(MillasAMetros === true){
         result = inputValue * 1609;
         convertido = "Metros"
+    }
     document.getElementById("resultadoLongitud").innerHTML = result + " " + convertido;
 }
 
