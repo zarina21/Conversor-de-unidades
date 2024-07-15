@@ -7,13 +7,25 @@ function convertorLongitud() {
     const MetrosAMillas = unit === "MetrosAMillas";
     const MetrosAPies = unit === "MetrosAPies";
     const MetrosAcm = unit === "MetrosAcm";
+    const MetrosAmm = unit === "MetrosAmm";
     const MetrosAYardas = unit === "MetrosAYardas";
     //km
     const KmAMetros = unit === "KmAMetros";
     const KmAMillas = unit === "KmAMillas";
+    const KmAPies = unit === "KmAPies";
+    const KmAcm = unit === "KmAcm";
+    const KmAmm = unit === "KmAmm";
+    const KmAYardas = unit === "KmAYardas";
     //millas
     const MillasAKm = unit === "MillasAKm";
     const MillasAMetros = unit === "MillasAMetros";
+    const MillasAPies = unit === "MillasAPies";
+    const MillasAcm = unit === "MillasAcm";
+    const MillasAmm = unit === "MillasAmm";
+    const MillasAYardas = unit === "MillasAYardas";
+    //pies
+    const PiesAMetros = unit === "PiesAMetros";
+    
     // <p> resultado, medida </p> ejemplo: "10 km"
     let result = 0;  
     let convertido = "medida"; 
