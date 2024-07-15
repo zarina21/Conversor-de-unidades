@@ -10,7 +10,7 @@
 body{
     margin:0,5rem;
 }
-h1{
+h1, h2, h3{
     margin: 5px 5px 5px 5px;
     color: var(--colortext);
 }
@@ -65,7 +65,7 @@ button {
     border: solid var(--colorBorder);
     border-radius: 20px;
     justify-content: space-around;
-    width: 70%;
+    width: 80;
 }
 
 .calculadora {
