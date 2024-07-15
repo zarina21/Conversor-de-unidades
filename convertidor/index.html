@@ -17,144 +17,211 @@
         </div>
     </header>
     <main>
-        <div class="titulo">
-            <div>
-                <h1>Conversor de unidades</h1>
-            </div>
-            <div>
-                <p>Convierte tus medidas aqui</p>
-            </div>
-        </div>
-        <div class="calculadoras">
-            <div class="calculadora">
+        <div>
+            <div class="titulo">
                 <div>
-                    <h1>Longitud</h1>
+                    <h1>Conversor de unidades</h1>
                 </div>
                 <div>
-                    <input type="number" id="inputLongitud" placeholder="Insertar valor">
-                </div>
-                <div>
-                    <select id="Longitud">
-                        <!-- metros -->
-                        <option value="MetrosAKm">Metros a Km</option>
-                        <option value="MetrosAMillas">Metros a Millas</option>
-                        <option value="MetrosAPies">Metros a Pies</option>
-                        <option value="MetrosAcm">Metros a cm</option>
-                        <option value="MetrosAcm">Metros a Yardas</option>
-                        <!-- km -->
-                        <option value="KmAMetros">Km a Metros</option>
-                        <option value="KmAMillas">Km a Millas</option>
-                        <option value="KmAPies">Km a Pies</option>
-                        <option value="KmAcm">Km a cm</option>
-                        <option value="KmAmm">Km a mm</option>
-                        <option value="KmAmm">Km a Yardas</option>
-                        <!-- millas -->
-                        <option value="MillasAKm">Millas a Km</option>  
-                        <option value="MillasAMetros">Millas a Metros</option>
-                        <option value="MillasAPies">Millas a Pies</option>
-                        <option value="MillasAcm">Millas a cm</option>
-                        <option value="MillasAmm">Millas a mm</option>
-                        <option value="MillasAYardas">Millas a Yardas</option>
-                        <!-- pies -->
-                        <option value="PiesAMetros">Pies a Metros</option>  
-                        <option value="PiesAKm">Pies a Km</option>  
-                        <option value="PiesAMillas">Pies a Millas</option>
-                        <option value="PiesAcm">Pies a cm</option>
-                        <option value="PiesAmm">Pies a mm</option>
-                        <option value="PiesAYardas">Pies a Yardas</option>
-                        <!-- centimetros -->
-                        <option value="cmAMetros">cm a Metros</option>
-                        <option value="cmAKm">cm a Km</option>
-                        <option value="cmAMillas">cm a Millas</option>
-                        <option value="cmAPies">cm a Pies</option>
-                        <option value="cmAmm">cm a mm</option>
-                        <option value="cmAmm">cm a Yardas</option>
-                        <!-- mm -->
-                        <option value="mmAMetros">mm a Metros</option>
-                        <option value="mmAKm">mm a km</option>
-                        <option value="mmAMillas">mm a Millas</option>
-                        <option value="mmAPies">mm a Pies</option>
-                        <option value="mmAcm">mm a cm</option>
-                        <option value="mmAYardas">mm a Yardas</option>
-                        <!-- yardas -->
-                        <option value="YardasAMetros">Yardas a Metros</option>
-                        <option value="YardasAKm">Yardas a Km</option>
-                        <option value="YardasAMetros">Yardas a Metros</option>
-                        <option value="yardasAMillas">Yardas a Millas</option>
-                        <option value="yardasAPies">Yardas a Pies</option>
-                        <option value="yardasAcm">Yardas a cm</option>
-                        <option value="yardasAmm">Yardas a mm</option>
-                    </select>
-                </div>
-                <div>
-                    <p>a:</p>
-                </div>
-                <div>
-                    <button onclick="convertorLongitud()">Convertir</button>
-                </div>
-                <div>
-                    <p id="resultadoLongitud">resultado:</p>
+                    <p>Convierte tus medidas aqui</p>
                 </div>
             </div>
-            <div class="calculadora">
-                <div>
-                    <h1>Volumen</h1>
+            <div class="calculadoras">
+                <div class="calculadora">
+                    <div>
+                        <h1>Longitud</h1>
+                    </div>
+                    <div>
+                        <input type="number" id="inputLongitud" placeholder="Insertar valor">
+                    </div>
+                    <div>
+                        <select id="Longitud">
+                            <!-- metros -->
+                            <option value="MetrosAKm">Metros a Km</option>
+                            <option value="MetrosAMillas">Metros a Millas</option>
+                            <option value="MetrosAPies">Metros a Pies</option>
+                            <option value="MetrosAcm">Metros a cm</option>
+                            <option value="MetrosAYardas">Metros a Yardas</option>
+                            <!-- km -->
+                            <option value="KmAMetros">Km a Metros</option>
+                            <option value="KmAMillas">Km a Millas</option>
+                            <option value="KmAPies">Km a Pies</option>
+                            <option value="KmAcm">Km a cm</option>
+                            <option value="KmAmm">Km a mm</option>
+                            <option value="KmAmm">Km a Yardas</option>
+                            <!-- millas -->
+                            <option value="MillasAKm">Millas a Km</option>  
+                            <option value="MillasAMetros">Millas a Metros</option>
+                            <option value="MillasAPies">Millas a Pies</option>
+                            <option value="MillasAcm">Millas a cm</option>
+                            <option value="MillasAmm">Millas a mm</option>
+                            <option value="MillasAYardas">Millas a Yardas</option>
+                            <!-- pies -->
+                            <option value="PiesAMetros">Pies a Metros</option>  
+                            <option value="PiesAKm">Pies a Km</option>  
+                            <option value="PiesAMillas">Pies a Millas</option>
+                            <option value="PiesAcm">Pies a cm</option>
+                            <option value="PiesAmm">Pies a mm</option>
+                            <option value="PiesAYardas">Pies a Yardas</option>
+                            <!-- centimetros -->
+                            <option value="cmAMetros">cm a Metros</option>
+                            <option value="cmAKm">cm a Km</option>
+                            <option value="cmAMillas">cm a Millas</option>
+                            <option value="cmAPies">cm a Pies</option>
+                            <option value="cmAmm">cm a mm</option>
+                            <option value="cmAmm">cm a Yardas</option>
+                            <!-- mm -->
+                            <option value="mmAMetros">mm a Metros</option>
+                            <option value="mmAKm">mm a km</option>
+                            <option value="mmAMillas">mm a Millas</option>
+                            <option value="mmAPies">mm a Pies</option>
+                            <option value="mmAcm">mm a cm</option>
+                            <option value="mmAYardas">mm a Yardas</option>
+                            <!-- yardas -->
+                            <option value="YardasAMetros">Yardas a Metros</option>
+                            <option value="YardasAKm">Yardas a Km</option>
+                            <option value="YardasAMetros">Yardas a Metros</option>
+                            <option value="yardasAMillas">Yardas a Millas</option>
+                            <option value="yardasAPies">Yardas a Pies</option>
+                            <option value="yardasAcm">Yardas a cm</option>
+                            <option value="yardasAmm">Yardas a mm</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>a:</p>
+                    </div>
+                    <div>
+                        <button onclick="convertorLongitud()">Convertir</button>
+                    </div>
+                    <div>
+                        <p id="resultadoLongitud">resultado:</p>
+                    </div>
                 </div>
-                <div>
-                    <input type="number" id="inputVolumen" placeholder="Insertar valor">
+                <div class="calculadora">
+                    <div>
+                        <h1>Volumen</h1>
+                    </div>
+                    <div>
+                        <input type="number" id="inputVolumen" placeholder="Insertar valor">
+                    </div>
+                    <div>
+                        <select id="Volumen">
+                            <!-- litroa -->
+                            <option value="LitrosAKl">Litros a Kl</option>
+                            <option value="LitrosAGalon">Litros a Galon</option>
+                            <!-- kl -->
+                            <option value="klALitros">Kl a Litros</option>
+                            <option value="klAGalon">Kl a Galon</option>
+                            <!-- galon -->
+                            <option value="GalonAKl">Galon a Kl</option>
+                            <option value="GalonALitros">Galon a Litros</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>a:</p>
+                    </div>
+                    <div>
+                        <button onclick="convertorVolumen()">Convertir</button>
+                    </div>
+                    <div>
+                        <p id="resultadoVolumen">resultado:</p>
+                    </div>
                 </div>
-                <div>
-                    <select id="Volumen">
-                        <!-- litroa -->
-                        <option value="LitrosAKl">Litros a Kl</option>
-                        <option value="LitrosAGalon">Litros a Galon</option>
-                        <!-- kl -->
-                        <option value="klALitros">Kl a Litros</option>
-                        <option value="klAGalon">Kl a Galon</option>
-                        <!-- galon -->
-                        <option value="GalonAKl">Galon a Kl</option>
-                        <option value="GalonALitros">Galon a Litros</option>
-                    </select>
+                <div class="calculadora">
+                    <div>
+                        <h1>Masa</h1>
+                    </div>
+                    <div>
+                        <input type="number" id="inputMasa" placeholder="Insertar valor">
+                    </div>
+                    <div>
+                        <select id="Masa">
+                            <!-- gramos -->
+                            <option value="GramosAKg">Gramos a Kg</option>
+                            <option value="GramosAOz">Gramos a Onzas</option>
+                            <!-- kg -->
+                            <option value="kgAGramos">Kg a Gramos</option>
+                            <option value="KgAOz">Kg a Onzas</option>
+                            <!-- onzas -->
+                            <option value="OzAKg">Onzas a Kg</option>
+                            <option value="OzAGramos">Onzas a Gramos</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>a:</p>
+                    </div>
+                    <div>
+                        <button onclick="convertorMasa()">Convertir</button>
+                    </div>
+                    <div>
+                        <p id="resultadoMasa">resultado:</p>
+                    </div>
                 </div>
-                <div>
-                    <p>a:</p>
+                <div class="calculadora">
+                    <div>
+                        <h1>Temperatura</h1>
+                    </div>
+                    <div>
+                        <input type="number" id="inputTemperatura" placeholder="Insertar valor">
+                    </div>
+                    <div>
+                        <select id="Temperatura">
+                            <option></option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>a:</p>
+                    </div>
+                    <div>
+                        <button onclick="convertorTemperatura()">Convertir</button>
+                    </div>
+                    <div>
+                        <p id="resultadoTemperatura">resultado:</p>
+                    </div>
                 </div>
-                <div>
-                    <button onclick="convertorVolumen()">Convertir</button>
+                <div class="calculadora">
+                    <div>
+                        <h1>Tiempo</h1>
+                    </div>
+                    <div>
+                        <input type="number" id="inputTiempo" placeholder="Insertar valor">
+                    </div>
+                    <div>
+                        <select id="convertorTiempo">
+                            <option></option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>a:</p>
+                    </div>
+                    <div>
+                        <button onclick="convertorTiempo()">Convertir</button>
+                    </div>
+                    <div>
+                        <p id="resultadoTiempo">resultado:</p>
+                    </div>
                 </div>
-                <div>
-                    <p id="resultadoVolumen">resultado:</p>
-                </div>
-            </div>
-            <div class="calculadora">
-                <div>
-                    <h1>Masa</h1>
-                </div>
-                <div>
-                    <input type="number" id="inputMasa" placeholder="Insertar valor">
-                </div>
-                <div>
-                    <select id="Masa">
-                        <!-- gramos -->
-                        <option value="GramosAKg">Gramos a Kg</option>
-                        <option value="GramosAOz">Gramos a Onzas</option>
-                        <!-- kg -->
-                        <option value="kgAGramos">Kg a Gramos</option>
-                        <option value="KgAOz">Kg a Onzas</option>
-                        <!-- onzas -->
-                        <option value="OzAKg">Onzas a Kg</option>
-                        <option value="OzAGramos">Onzas a Gramos</option>
-
-                    </select>
-                </div>
-                <div>
-                    <p>a:</p>
-                </div>
-                <div>
-                    <button onclick="convertorMasa()">Convertir</button>
-                </div>
-                <div>
-                    <p id="resultadoMasa">resultado:</p>
+                <div class="calculadora">
+                    <div>
+                        <h1>Velocidad</h1>
+                    </div>
+                    <div>
+                        <input type="number" id="inputVelocidad" placeholder="Insertar valor">
+                    </div>
+                    <div>
+                        <select id="convertorVelocidad">
+                            <option></option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>a:</p>
+                    </div>
+                    <div>
+                        <button onclick="convertorVelocidad()">Convertir</button>
+                    </div>
+                    <div>
+                        <p id="resultadoVelocidad">resultado:</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -162,7 +229,7 @@
     <footer>
         <div class="menu">
             <div>
-                <a><i class="fab fa-instagram"></i>Intagram</a>
+                <a><i class="fab fa-instagram"></i>Instagram</a>
             </div>
             <div>
                 <a><i class="fa-brands fa-github"></i>Github</a>

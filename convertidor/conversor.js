@@ -1,32 +1,54 @@
 function convertorLongitud() {   
     const inputValue = document.getElementById("inputLongitud").value;
     const unit = document.getElementById("Longitud").value;
+    //colocamos las constantes de las distintas conversiones
+    //metros
     const MetrosAKm = unit === "MetrosAKm";
     const MetrosAMillas = unit === "MetrosAMillas";
+    const MetrosAPies = unit === "MetrosAPies";
+    const MetrosAcm = unit === "MetrosAcm";
+    const MetrosAYardas = unit === "MetrosAYardas";
+    //km
     const KmAMetros = unit === "KmAMetros";
     const KmAMillas = unit === "KmAMillas";
+    //millas
     const MillasAKm = unit === "MillasAKm";
     const MillasAMetros = unit === "MillasAMetros";
-    let result = 0;
-    let convertido = "medida";
-    if (MetrosAKm === true){
+    // <p> resultado, medida </p> ejemplo: "10 km"
+    let result = 0;  
+    let convertido = "medida"; 
+    //calculadora longitud
+    //metros
+    if (MetrosAKm === true){ 
         result = inputValue * 1000;
         convertido = "Km"
     } else if (MetrosAMillas === true){
         result = inputValue / 1609;
         convertido = "Millas"
+    } else if (MetrosAPies === true){
+        result = inputValue *3.281;
+        convertido = "Pies" 
+    } else if (MetrosAcm ===true){
+        result = inputValue * 100;
+        convertido = "cm"
+    //km
     } else if (KmAMetros === true){
         result = inputValue / 1000;
         convertido = "Metros"
     } else if (KmAMillas === true){
         result = inputValue / 1.609;
         convertido = "Millas"
+    //millas
     } else if (MillasAKm === true){
         result = inputValue * 1.609;
         convertido = "Km"
     } else if(MillasAMetros === true){
         result = inputValue * 1609;
         convertido = "Metros"
+    //pies
+    //cm
+    //mm
+    //yardas
     }
     document.getElementById("resultadoLongitud").innerHTML = result + " " + convertido;
 }
@@ -67,6 +89,7 @@ function convertorVolumen() {
 function convertorMasa() {   
     const inputValue = document.getElementById("inputMasa").value;
     const unit = document.getElementById("Masa").value;
+//gramos
     const GramosAKg = unit === "GramosAKg";
     const GramosAOz = unit === "GramosAOz";
     const kgAGramos = unit === "kgAGramos";
